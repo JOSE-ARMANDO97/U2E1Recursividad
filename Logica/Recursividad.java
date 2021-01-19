@@ -75,20 +75,22 @@ public int factorialRecursivo(int n){
   }
 
 
-public   int Desaparece_números(int n, int i ){
-  int A[] = new int[n];
-  for(i=0;i<n;i++){
- System.out.println("  INGRESE NUMERO PARA EL ARREGLO");
-  A[i]=leer.nextInt();
-  }
-  if(n==A[0]){
-        System.out.println(" Termino:"+ A[i]);
-    }else{
-      System.out.println(A.length);
-        Desaparece_números(n-1,i);
-}
-        return A.length;
-                    
+public void Desaparicion_números(int Num[],int contador){
+    if(Num.length==contador){ 
+        System.out.println(" Termino ");
+    }else{ 
+         try {
+            Thread.sleep(500);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Recursividad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+              for(i=0;i<Num.length-contador;i++){
+                    System.out.print("  "+Num[i]);
+              }
+              System.out.println();
+         Desaparicion_números(Num ,contador+1);
+        
+      }
 }
 
 public boolean Palindromo(String Palabra,int i,int d){
