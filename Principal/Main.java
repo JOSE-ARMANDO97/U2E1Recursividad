@@ -47,7 +47,8 @@ public class Main extends Recursividad {
                   break;
               case 4:
                   
-                  num=11;
+                 int[] miArreglo= {0,1,2,3,4,5,6,7,8,9,10,11,12};
+                  R.Desaparicion_números(miArreglo,1);
                  
                System.out.println(R.Desaparece_números(num,i));
                  
